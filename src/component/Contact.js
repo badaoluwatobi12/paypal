@@ -29,8 +29,8 @@ function Contact() {
   return (
     <div>
         <div className='container-fluid'>
-           <div className='row mt-5'>
-              <div className='col-lg-4 col-md-5 col-sm-7 mx-auto p-2 shadow border mt-5'>
+           <div className='row mt-5 p-3'>
+              <div className='col-lg-4 col-md-5 col-sm-7 mx-auto p-2 shadow border mt-5 rounded-lg'>
                    <div className='p-3'>
                         <hr/>
                           <h4 className='text-center text-success'>Contact Page</h4>

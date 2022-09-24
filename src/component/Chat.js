@@ -23,7 +23,7 @@ function Chat() {
   return (
     <div>
        <div className='container-fluid mt-5'>
-          <div className='row mt-5'>
+          <div className='row mt-5 p-3'>
             <div className='col-lg-4 col-md-8 col-sm-6 mx-auto shadow border p-4' >
                        <hr/>
                        <h4 className='text-center text-success'>CHAT APP</h4>
