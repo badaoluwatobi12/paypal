@@ -36,8 +36,8 @@ function Chat() {
               chatArr.map((val,i)=>{
                     return(
                         <div key={i}>
-            <div className='p-2 shadow rounded-lg my-2'>
-                 <div className='row'>
+            <div className='p-2 shadow rounded-lg my-2 animate__animated animate__fadeInUp'>
+                 <div className='row a'>
                  <div className='col-10'>
                 <span>{val.chatInput}</span>
                 </div>
