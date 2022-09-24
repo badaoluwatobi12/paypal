@@ -12,14 +12,18 @@ function Contact() {
      const sendEmail=(e)=>{
        e.preventDefault();
        console.log(form)
-       emailjs.sendForm("service_5q79g4k", "template_6i3zt2s", form.current, "NBfXFPxY5-jRL1yVx").then(res=>{
-        swal(`Hi ${name},`, "Message sent, Tobi the admin we get to you after 24hrs", "success");
-         setName("")
-         setEmail("")
-         setMessage("")
-       }).catch(err=>{
-        swal(`Hi ${name},`, "Network error! Try again", "error");
-       });
+        if (name&&email&&message) {
+            emailjs.sendForm("service_5q79g4k", "template_6i3zt2s", form.current, "NBfXFPxY5-jRL1yVx").then(res=>{
+                swal(`Hi ${name},`, "Message sent, Tobi the admin we get to you after 24hrs", "success");
+                 setName("")
+                 setEmail("")
+                 setMessage("")
+               }).catch(err=>{
+                swal(`Hi ${name},`, "Network error! Try again", "error");
+               });
+        }else{
+            swal("Please input all filed!", "Try again!", "warning");
+        }
      }
 
   return (
