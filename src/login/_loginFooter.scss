@@ -1,0 +1,18 @@
+.footer{
+    grid-column: 1 / -1;
+    background: rgb(229, 229, 229);
+    height: 5rem;
+    width: 100%;
+
+    display:flex;
+    gap: 10rem;
+    justify-content: center;
+    align-items: center;
+
+    &__link{
+        color: black;
+        font-size: 13px;
+        font-weight: 600;
+        text-decoration: none;
+    }
+}

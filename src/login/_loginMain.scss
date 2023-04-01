@@ -1,0 +1,35 @@
+.main{
+
+    grid-column: 1 / -1;
+    background: #fff;
+
+    display: grid;
+    grid-template-rows: 1fr min-content 1fr ;
+
+
+&__bar1{
+    // border: solid yellow 2px;
+    display: grid;
+
+    justify-content: center;
+    align-items: end ;
+}
+&__bar2{
+    // border: solid yellow 2px;
+    display: grid;
+   
+    justify-content: center;
+    align-items: end ;
+}
+&__bar3{
+ 
+    display: grid;
+   
+    justify-content: center;
+    align-items: end ;
+}
+}
+.bodr{
+    border: solid red 2px;
+
+}

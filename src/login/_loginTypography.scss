@@ -1,0 +1,220 @@
+.logo{
+    height: 8rem;
+    display: grid;
+    margin-top: 13rem;
+ 
+  }
+
+  .form{
+    display: grid;
+ 
+    grid-gap: 10px;
+    margin: 0 2rem;
+    // border: solid red 2px;
+    &__inp{
+        height: 50px;
+        // background-color: rgba( black, .25);
+        width: 45rem;
+        // border: solid green 2px;
+      padding-left: 2rem;
+      border: black;
+      background-color: rgba( gray, .25);
+
+
+      &:focus{
+        outline: none;
+        // box-shadow: 0 1rem 2rem rgba(black, .1);
+        // border: gray;
+
+        border-bottom: 3px solid green;
+       }
+
+    &:focus:invalid{
+        // border: black;
+        border-bottom: 3px solid orange;
+    }
+    
+    &::-webkit-input-placeholder{
+        color: gray;
+
+       }
+    }
+  }
+
+  .lang{
+    
+    display:flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+
+
+    
+    height: 100px;
+
+  }
+
+  .box{
+  
+    display: flex;
+    // justify-content: center;
+    align-items: start;
+    gap: 20px;
+    margin: 0rem 1rem;
+
+    height: 30px;
+   
+
+    &__forget{
+      font-size: 12px;
+      color: navy;
+      font-weight: 700;
+      text-decoration: none;
+    }
+    &__show{
+      font-size: 12px;
+      display: flex;
+      gap: 5px;
+    }
+
+  }
+
+.button1 {
+  align-items: center;
+  background: navy;
+  border: 0;
+  border-radius: 100px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 50px;
+  width: 45rem;
+  min-height: 40px;
+  min-width: 0px;
+  overflow: hidden;
+  padding: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  touch-action: manipulation;
+  transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  text-decoration: none;
+
+
+}
+
+.button1:hover,
+.button1:focus { 
+  background: #09223b;
+  color: #ffffff;
+}
+
+.button1:active {
+  background: #09223b;
+  // color: rgb(255, 255, 255, .7);
+}
+
+.button1:disabled { 
+  cursor: not-allowed;
+  background: rgba(0, 0, 0, .08);
+  color: rgba(0, 0, 0, .3);
+}
+
+
+.lineShell{
+  position: relative;
+  height: 5rem;
+  width: 45rem;
+  display: grid;
+  // justify-content: center;
+  align-items: center;
+ 
+  &__line{
+    border: solid .1px gray;
+
+  
+
+  }
+}
+
+
+
+
+.circleShell{
+
+  height: 10rem;
+  display: grid;
+ margin: -8.5rem auto;
+  align-items: center;
+
+  &__circle{
+    border-radius:50% ;
+    background: #fff;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+  width: 4rem;
+  height: 4rem;
+
+  position: absolute;
+  }
+}
+
+
+
+.button2 {
+  align-items: center;
+  background: #fff;
+  border: solid 1px gray ;
+  border-radius: 100px;
+  box-sizing: border-box;
+  color:navy;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 50px;
+  width: 45rem;
+  min-height: 40px;
+  min-width: 0px;
+  overflow: hidden;
+  padding: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  touch-action: manipulation;
+  transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  text-decoration: none;
+
+}
+
+.button2:hover,
+.button2:focus { 
+  background: #09223b;
+  color: #ffffff;
+}
+
+.button2:active {
+  background: #09223b;
+  // color: rgb(255, 255, 255, .7);
+}
+
+.button2:disabled { 
+  cursor: not-allowed;
+  background: rgba(0, 0, 0, .08);
+  color: rgba(0, 0, 0, .3);
+}
