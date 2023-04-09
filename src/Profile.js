@@ -39,7 +39,7 @@ function Login() {
       <div className="container">
         <div className="main2">
           <div className="main2__bar4">
-            <img src={logo} alt="logo" className="logo2" />
+            {/* <img src={logo} alt="logo" className="logo2" /> */}
             <h1 className="head1">Set up your Profile</h1>
           </div>
 

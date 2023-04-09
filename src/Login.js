@@ -47,7 +47,7 @@ function Login() {
         <div className="main">
           <div className="bordr">
             <div className="main__bar1">
-              <img src={logo} alt="logo" className="logo" />
+              {/* <img src={logo} alt="logo" className="logo" /> */}
             </div>
 
             <div className="main__bar2">

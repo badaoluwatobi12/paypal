@@ -41,7 +41,7 @@ function Account() {
       <div className="container">
         <div className="main3">
           <div className="main3__bar6">
-            <img src={logo} alt="logo" className="logo3" />
+            {/* <img src={logo} alt="logo" className="logo3" /> */}
           </div>
           <div>
             <h1 className="head1">Set up your Account</h1>
