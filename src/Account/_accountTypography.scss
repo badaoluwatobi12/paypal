@@ -1,3 +1,9 @@
+.logo3{
+  height: 8rem;
+  display: grid;
+  // margin-top: -50rem;
+
+}
 
 .head1{
 
@@ -5,14 +11,17 @@
   display: flex;
   justify-content: center;
 
+  height: 8rem;
+
 }
 
 .text{
-  font-size: 12px;
+  font-size: 15px;
   width: 45rem;
- 
-  
-  margin-top: 2rem;
+  height: 10rem;
+
+
+  margin-top: 12rem;
   color: gray;
 
   &__textLink{
@@ -78,4 +87,18 @@
     background: rgba(0, 0, 0, .08);
     color: rgba(0, 0, 0, .3);
   }
-  
+
+  .verifyBox{
+   
+    grid-column: 1/ -1;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+
+
+  }
+
+  .verified{
+    height: 30%;
+
+  }

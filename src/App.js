@@ -4,6 +4,7 @@ import { Route, Routes } from "react-router-dom";
 import Login from "./Login";
 import Profile from "./Profile";
 import Account from "./Account";
+import Done from "./Done";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/account" element={<Account />} />
+        <Route path="/done" element={<Done />} />
       </Routes>
     </React.Fragment>
   );
